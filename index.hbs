@@ -2,14 +2,15 @@
 
 
 
-<main>
+<main class="container">
 
-  {{#foreach posts}}
-    {{!-- <h1><a href="{{url}}">{{title}}</a></h1> --}}
-    {{> post_card}}
+<div class="columns is-multiline">
+    {{#foreach posts}}
+      <div class="column is-half is-centered">{{> post_card}}</div>
+    {{/foreach}}
+  
 
-  {{/foreach}}
+</div>
 
-</main>
-
-{{pagination}}
+  {{pagination}}
+  </main>
