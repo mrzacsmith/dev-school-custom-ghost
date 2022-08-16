@@ -1,0 +1,18 @@
+<nav class="pagination is-medium" role="navigation" aria-label="pagination">
+  {{#if prev}}
+    <a href="{{page_url prev}}" class="pagination-next">
+      newer posts
+    </a>
+  {{/if}}
+  <span class="pagination-link is-current">
+    page
+    {{page}}
+    of
+    {{pages}}
+  </span>
+  {{#if next}}
+    <a href="{{page_url next}}" class="pagination-previous">
+      older posts
+    </a>
+  {{/if}}
+</nav>

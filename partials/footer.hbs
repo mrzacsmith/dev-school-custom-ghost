@@ -1,0 +1,42 @@
+<footer class="footer is-centered">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        {{#get "posts" limit="3" as |recent|}}
+          <section class="recent-posts">
+            <h3>
+              recent posts
+            </h3>
+            <ul>
+              {{#foreach recent}}
+                <li>
+                  <a href="{{url}}">
+                    {{title}}
+                  </a>
+                </li>
+              {{/foreach}}
+            </ul>
+          </section>
+        {{/get}}
+      </div>
+      <div class="column">
+        {{#get "tags" limit="5" as |tags|}}
+          <section>
+            <h3>
+              tags
+            </h3>
+            <ul>
+              {{#foreach tags}}
+                <li>
+                  <a href="{{url}}">
+                    {{name}}
+                  </a>
+                </li>
+              {{/foreach}}
+            </ul>
+          </section>
+        {{/get}}
+      </div>
+    </div>
+  </div>
+</footer>
