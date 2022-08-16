@@ -1,0 +1,23 @@
+{
+  "name": "custom",
+  "version": "1.0.0",
+  "description": "Custom theme practice. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "theme",
+    "ghost",
+    "ghost-theme"
+  ],
+  "author": {
+    "name": "@MrZacSmith",
+    "email": "zac@codeshock.dev",
+    "url": "https://codeshock.dev"
+  },
+  "license": "ISC",
+  "config": {
+    "posts_per_page": 3
+  }
+}
