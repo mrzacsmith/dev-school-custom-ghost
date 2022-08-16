@@ -5,7 +5,8 @@
 <main>
 
   {{#foreach posts}}
-    <h1><a href="{{url}}">{{title}}</a></h1>
+    {{!-- <h1><a href="{{url}}">{{title}}</a></h1> --}}
+    {{> post_card}}
 
   {{/foreach}}
 
